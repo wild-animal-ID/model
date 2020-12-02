@@ -3,19 +3,19 @@
 Automated wildlife identification can considerably minimise the time and effort required for wildlife identification, and it can promote the development of wildlife conservation. We independently constructed a database containing 260 species of protected wildlife unique to Nanjing Agricultural University based on the Wildlife under Special State Protection List (China). The constructed database was used to test the performance of several convolutional neural networks (e.g., AlexNet, VGGNET16 and ResNet50) for animal identification. The best-performing network model, ResNet50, with a TOP-1 accuracy of 83.49% and maximum accuracy of 100% was selected for our automatic animal identification model. Finally, we developed a mobile application for the automatic identification of protected wildlife using the abovementioned database and convolutional neural network model, allowing automatic recognition of images of protected wild animals to reduce the time and effort for manual identification and improving public’s knowledge of protected wild animals. This paper provides data and technical support for future wild animal research and is crucial for promoting the monitoring and protection of wild animals.
 
 ## [Model](https://github.com/wild-animal-ID/model) 
-####ConvNets:
+###ConvNets:
  * [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)
  * [VGGNet](https://arxiv.org/pdf/1409.1556.pdf)
  * [ResNet](https://arxiv.org/pdf/1512.03385.pdf)
  
-####Requirements
+###Requirements
  * Python 3.5
  * Tensorflow-gpu 1.8
  * NumPy
  * OpenCV2
  
-####Usage
-#####data
+###Usage
+####data
  The data of each species category is under the data folder. 
  eg. `data/Mammals/train.txt` and `data/Mammals/val.txt` . 
  The format must be like following:
